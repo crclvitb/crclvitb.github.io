@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="tylak.jpg">
+    <title>TSFTA 😋</title>
+    <style>
+        /* Set display to none for image*/
+        html {
+            scroll-behavior: smooth;
+        }
+        #image {
+            display: none;
+        }
+        td {
+            padding: 0.2rem 1rem 0.2rem 1rem;
+        }
+    </style>
+</head>
+
+<body style="background: #FFFFFF">
+    <h1 style="color: rgb(187, 57, 57);
+                font-family: Inter;
+                text-align: center;
+                text-transform:uppercase;
+                margin-top: 20px;">
+        Tylak Shrem Food Telling Association
+    </h1>
+    <h2 style="color: rgb(64, 128, 138); font-family: Inter; text-transform:uppercase;">Our Menu</h2>
+    <!-- <img src="mess_aug.jpg" alt="" width="700" style="border-radius: 2%" /> -->
+    <a href="mess_aug.jpg" download style="color: rgb(195, 164, 42); font-family: Inter">Download</a>
+    
+    <button style=" font-family:Inter; background-color: rgb(255, 255, 163);border:2px solid rgb(255, 172, 84); float: right; margin-right: 20px; border-radius:45%; padding: 5px 5px 5px 5px;" type="button"
+        onclick="dark();" id="darkID">
+        Dark
+    </button>
+    <button id="tylakmode" style=" font-family:Inter; background-color: rgb(55, 241, 248);border:2px solid rgb(255, 138, 12); float: right; margin-right: 20px; border-radius:45%; padding: 5px 10px 5px 10px;" type="button"
+        onclick="tylak()" class="1">
+        Tylak Mode
+    </button>
+    <br>
+    <br>
+
+    <div style="font-family:Inter; font-weight:bolder; color: rgb(0, 0, 0); overflow-x:auto" id="tablediv">
+        <table border="2px solid white">
+            <thead style="background-color:rgb(189, 115, 106)">
+                <tr>
+                    <th title="Field #1">MONDAY</th>
+                    <th title="Field #2">TUESDAY</th>
+                    <th title="Field #3">WEDNESDAY</th>
+                    <th title="Field #4">THURSDAY</th>
+                    <th title="Field #5">FRIDAY</th>
+                    <th title="Field #6">SATURDAY</th>
+                    <th title="Field #7">SUNDAY</th>
+                </tr>
+            </thead>
+            <tbody style="border: 2px solid white;">
+                <tr style="background-color: rgb(116, 116, 187); font-size:1.3em; text-align:center; color:white;">
+                    <td colspan="100%">BREAKFAST</td>
+                </tr>
+                <tr>
+                    <td>BREAD, BUTTER, JAM</td>
+                    <td>BREAD, BUTTER, JAM</td>
+                    <td>BREAD, BUTTER, JAM</td>
+                    <td>BREAD, BUTTER, JAM</td>
+                    <td>BREAD, BUTTER, JAM</td>
+                    <td>BREAD, BUTTER, JAM</td>
+                    <td>BREAD, BUTTER, JAM</td>
+                </tr>
+                <tr>
+                    <td>MILK, TEA, COFEE</td>
+                    <td>MILK, TEA, COFEE</td>
+                    <td>MILK, TEA, COFEE</td>
+                    <td>MILK, TEA, COFEE</td>
+                    <td>MILK, TEA, COFEE</td>
+                    <td>MILK, TEA, COFEE</td>
+                    <td>MILK, TEA, COFEE</td>
+                </tr>
+                <tr>
+                    <td>BANANA / FRUIT SALAD</td>
+                    <td>BANANA / FRUIT SALAD</td>
+                    <td>BANANA / FRUIT SALAD</td>
+                    <td>BANANA / FRUIT SALAD</td>
+                    <td>BANANA / FRUIT SALAD</td>
+                    <td>BANANA / FRUIT SALAD</td>
+                    <td>BANANA / FRUIT SALAD</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>PLAIN / CARROT / PODI / TOMATO /</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>IDLY, VADA, SAMBAR</td>
+                    <td>POHA, KICHADI</td>
+                    <td>PLAIN / ALLO / METHI / ATTA PARATHA</td>
+                    <td>VERMICELLI / RAVA /ATTA UPPUMA</td>
+                    <td></td>
+                    <td>AMRITSARI CHOLE BHATURE</td>
+                    <td>PLAIN / MASALA / OTHER VERITIES DOSA</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>UTHAPPAM</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>COCONUT / ONION AND TOMATO</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>COCONUT/ TOMATO / MINT CHUTNEY</td>
+                    <td>JELABI</td>
+                    <td>CURD, TOMATO SAUCE, PICKLE, ALLO GRAVY</td>
+                    <td>VADA, COCONUT CHUTNEY</td>
+                    <td></td>
+                    <td>-</td>
+                    <td>SAMBAR , CHILLY &amp; TOMATO CHUTNEY</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>CHUTNEY</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>BOILED EGG / SPROUTS</td>
+                    <td>-</td>
+                    <td>BOILED EGG / SPROUTS</td>
+                    <td>WARM LEMON WATER</td>
+                    <td>IDLY PODI with SESAME OIL</td>
+                    <td>BOILED EGG / SPROUTS</td>
+                    <td>-</td>
+                </tr>
+                <tr style="background-color: rgb(116, 116, 187); font-size:1.3em; text-align:center; color:white;">
+                    <td colspan="100%">LUNCH</td>
+                </tr>
+                <tr>
+                    <td>MIX SALAD</td>
+                    <td>CUCUMBER SALAD</td>
+                    <td>TOMATO SOUP</td>
+                    <td>MIX SALAD</td>
+                    <td>PLAIN BRIYANI</td>
+                    <td>MIXED SALAD</td>
+                    <td>CUCUMBER SALAD</td>
+                </tr>
+                <tr>
+                    <td>GREEN VEGETABLE</td>
+                    <td>ALOO DUM /GREEN VEG</td>
+                    <td>BHINDI MASALA</td>
+                    <td>LOKI DAL KI SABJI / BEETROOT PORIYAL</td>
+                    <td>VEG 65 /VEG AVIYAL</td>
+                    <td>ALOO MATAR / VEG AVIAL</td>
+                    <td>BRINGAL GRAVY</td>
+                </tr>
+                <tr>
+                    <td>CHAPATHI</td>
+                    <td>CHAPATHI</td>
+                    <td>CHAPATHI</td>
+                    <td>CHAPATHI</td>
+                    <td>CHAPATHI</td>
+                    <td>CHAPATHI</td>
+                    <td>CHAPPATI</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>MINT / LEMON/ TOMATO / TAMARIND</td>
+                    <td>CHICKEN / SOYA AND VEGETABLE</td>
+                </tr>
+                <tr>
+                    <td>PLAIN &amp; JEERA RICE</td>
+                    <td>PLAIN RICE</td>
+                    <td>PLAIN &amp; JEERA RICE</td>
+                    <td>PLAIN RICE</td>
+                    <td>PLAIN RICE</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>RICE</td>
+                    <td>BRIYANI</td>
+                </tr>
+                <tr>
+                    <td>RAJMA</td>
+                    <td>MASOOR DAL</td>
+                    <td>DAL FRY (MONG)</td>
+                    <td>PANCHMEL DAL</td>
+                    <td>RAJMA MASALA</td>
+                    <td>MONG DAL</td>
+                    <td>PANNER BUTTER MASALA</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>BHINDI / BOTTLE GOURD MORE</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ONION KARA KUZHAMBU</td>
+                    <td></td>
+                    <td>VEGETABLE SAMBAR</td>
+                    <td>DRUMSTICK SAMBAR</td>
+                    <td>BRINJAL KUZHAMBU</td>
+                    <td>MEAL MEKAR MASALA</td>
+                    <td>ONION RAITHA</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>KUZHAMBU / KADHI PAKODA</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>FRYUMS, PICKLE</td>
+                    <td>RASAM, PICKLE</td>
+                    <td>RASAM</td>
+                    <td>RASAM</td>
+                    <td>ONION RAITHA</td>
+                    <td>APPALAM</td>
+                    <td>LEMON JUICE</td>
+                </tr>
+                <tr>
+                    <td>FRUIT HALWA</td>
+                    <td>JALJIRA JUICE</td>
+                    <td>BOONDI RAITA / BUTTER MILK</td>
+                    <td>CURD /BUTTER MILK</td>
+                    <td>LEMON JUICE</td>
+                    <td>BUTTER MILK</td>
+                    <td>-</td>
+                </tr>
+                <tr style="background-color: rgb(116, 116, 187); font-size:1.3em; text-align:center; color:white;">
+                    <td colspan="100%">SNACKS</td>
+                </tr>
+                <tr>
+                    <td>VEG ROLE / SWEET OR MASALA CORN</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>SMALL POORI</td>
+                    <td>PAKODA / ALLO SAMOSA</td>
+                    <td>PAV BHAJI</td>
+                    <td>DHOKLA</td>
+                    <td>BOILED CHANA / MUNG BEAN</td>
+                    <td>MEDU / MASALA VADA</td>
+                </tr>
+                <tr>
+                    <td>/BHEL PURI</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>TOMATO SAUCE</td>
+                    <td>PANI / MASALA</td>
+                    <td>TOMATO SAUCE</td>
+                    <td>-</td>
+                    <td>GREEN CHUTNEY</td>
+                    <td>-</td>
+                    <td>CHUTNEY</td>
+                </tr>
+                <tr>
+                    <td>TEA / COFEE / MILK</td>
+                    <td>TEA / COFEE / MILK</td>
+                    <td>TEA / COFEE / MILK</td>
+                    <td>TEA / COFEE / MILK</td>
+                    <td>TEA / COFEE / MILK</td>
+                    <td>TEA / COFEE / MILK</td>
+                    <td>TEA / COFEE / MILK</td>
+                </tr>
+                <tr style="background-color: rgb(116, 116, 187); font-size:1.3em; text-align:center; color:white;"> 
+                    <td colspan="100%">DINNER</td>
+                </tr>
+                <tr>
+                    <td>CHAPPATI</td>
+                    <td>CHAPPATHI</td>
+                    <td>CHAPATHI</td>
+                    <td>CHAPATHI</td>
+                    <td>CHAPATHI</td>
+                    <td>CHAPATHI</td>
+                    <td>CHAPATHI</td>
+                </tr>
+                <tr>
+                    <td>RICE</td>
+                    <td>PULAO, RICE</td>
+                    <td>RICE</td>
+                    <td>RICE</td>
+                    <td>RICE</td>
+                    <td>FRIED RICE</td>
+                    <td>RICE</td>
+                </tr>
+                <tr>
+                    <td>PLAIN DAL</td>
+                    <td>DAL MAHARANI</td>
+                    <td>DAL TADKA</td>
+                    <td>DAL FRY</td>
+                    <td>RAJMA MASALA</td>
+                    <td>MOONG MASOOR DAL</td>
+                    <td>BHINDI BHAJI</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>PANNER DO PYAZA / CHICKEN</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>KADAI VEG / EGG CURRY</td>
+                    <td>GREEN VEG GRAVY</td>
+                    <td>PANNER / CHICKEN KADAI</td>
+                    <td>GREEN PEAS ALLO MASALA</td>
+                    <td></td>
+                    <td>VEGMANCHURIAN</td>
+                    <td>DAL-MAKHANI</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>CURRY</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>RASAM</td>
+                    <td>PAYASAM / KHEER</td>
+                    <td>RASAM</td>
+                    <td>TOMATO / HOT &amp; SOUR SOUP</td>
+                    <td>RASAM</td>
+                    <td>LENTIL / VEG MONCHOW SOUP</td>
+                    <td>GULAB JAMUN</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <p style="font-family: Inter; font-style:italic; color: rgb(71, 71, 213)">
+        Mr. Tylak Shrem is a reknowned mathematician currently serving as
+        Hostel Warden of Madras Municipal Corporation College (MMCC)
+    </p>
+
+    <img id="image" src="tylak.jpg" alt="tylak" width=300 style="border-radius:14px; background:#889bfc; padding:10px;"/>
+    <br>
+    <button type="button"
+        onclick="show();" id="btnID">Tylak</button>
+    <br><br><br>
+    
+    <script>
+        function tylak() {
+            if (document.body.style.backgroundImage == "initial") {
+                document.body.style.backgroundImage = "url('tylak.jpg')";
+                document.body.style.backgroundSize = document.getElementById('tylakmode').className + "px";
+                document.getElementById('tylakmode').className*=2;
+                document.body.style.backgroundRepeat = "repeat";
+            } else {
+                document.body.style.backgroundImage = "initial";
+            }
+        }
+        function dark() {
+            document.getElementById('tylakmode').className = '1';
+            if(document.body.style.background == 'rgb(255, 255, 255)') {
+                document.getElementById('darkID').textContent = "Light";
+                document.body.style.background = "#000000";
+                document.getElementById("tablediv").style.color = "#FFFFFF";
+            } else {
+                document.body.style.background = 'rgb(255, 255, 255)';
+                document.getElementById("tablediv").style.color = "#000000";
+                document.getElementById('darkID').textContent = "Dark";
+            }
+            
+        }   
+        function show() {
+            if(document.getElementById('btnID').textContent == "Tylak"){
+                document.getElementById('image').style.display = "block";
+                scrolltoimg()
+                document.getElementById('btnID').textContent = "Hide";
+                
+            } else {
+                document.getElementById('image').style.display = "none";
+                document.getElementById('btnID').textContent = "Tylak";
+            }
+            /* Access image by id and change
+            the display property to block*/
+            
+        }
+    </script>
+    <script>
+        function scrolltoimg() {
+            var myElement = document.getElementById('image');
+            var topPos = myElement.offsetTop;
+            scroll(0, topPos)
+        }
+    </script>
+</body>
+
+</html>
+

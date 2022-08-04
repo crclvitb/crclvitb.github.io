@@ -45,7 +45,7 @@
     <br>
 
     <div style="font-family:Inter; font-weight:bolder; color: rgb(0, 0, 0); overflow-x:auto" id="tablediv">
-        <table border="2px solid white">
+        <table class="tableclass" border="2px solid white">
             <thead style="background-color:rgb(189, 115, 106)">
                 <tr>
                     <th title="Field #1">MONDAY</th>
@@ -58,8 +58,8 @@
                 </tr>
             </thead>
             <tbody style="border: 2px solid white;">
-                <tr style="background-color: rgb(116, 116, 187); font-size:1.3em; text-align:center; color:white;">
-                    <td colspan="100%">BREAKFAST</td>
+                <tr>
+                    <td class="timing" colspan="100%">BREAKFAST</td>
                 </tr>
                 <tr>
                     <td>BREAD, BUTTER, JAM</td>
@@ -151,8 +151,8 @@
                     <td>BOILED EGG / SPROUTS</td>
                     <td>-</td>
                 </tr>
-                <tr style="background-color: rgb(116, 116, 187); font-size:1.3em; text-align:center; color:white;">
-                    <td colspan="100%">LUNCH</td>
+                <tr>
+                    <td class="timing" colspan="100%">LUNCH</td>
                 </tr>
                 <tr>
                     <td>MIX SALAD</td>
@@ -262,8 +262,8 @@
                     <td>BUTTER MILK</td>
                     <td>-</td>
                 </tr>
-                <tr style="background-color: rgb(116, 116, 187); font-size:1.3em; text-align:center; color:white;">
-                    <td colspan="100%">SNACKS</td>
+                <tr>
+                    <td class="timing" colspan="100%">SNACKS</td>
                 </tr>
                 <tr>
                     <td>VEG ROLE / SWEET OR MASALA CORN</td>
@@ -310,8 +310,8 @@
                     <td>TEA / COFEE / MILK</td>
                     <td>TEA / COFEE / MILK</td>
                 </tr>
-                <tr style="background-color: rgb(116, 116, 187); font-size:1.3em; text-align:center; color:white;"> 
-                    <td colspan="100%">DINNER</td>
+                <tr> 
+                    <td class="timing" colspan="100%">DINNER</td>
                 </tr>
                 <tr>
                     <td>CHAPPATI</td>
@@ -376,9 +376,31 @@
                     <td>LENTIL / VEG MONCHOW SOUP</td>
                     <td>GULAB JAMUN</td>
                 </tr>
-
             </tbody>
         </table>
+        <style>
+            .timing {
+                background-color: rgb(116, 116, 187) !important; 
+                font-size:1.3em;
+                text-align:center;
+                color:white;
+            }
+            /* td:nth-child(1)
+                {
+                background-color: orange;
+                } */
+            
+        </style>
+        <script>
+            var date = new Date(Date.now());
+            var day = date.getDay();
+            var x = document.querySelectorAll('td:nth-child(' + day + ')');
+            for(i=0, t = x[i]; i < x.length;i++) {
+                x[i].style.backgroundColor = "#FCF55F";
+                x[i].style.color = "red";
+                x[i].style.textShadow = "0px 1px 2px orange"
+            };
+        </script>
     </div>
 
     <p style="font-family: Inter; font-style:italic; color: rgb(71, 71, 213)">

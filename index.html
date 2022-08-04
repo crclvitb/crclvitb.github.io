@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="tylak.jpg">
+    <link rel="icon" type="image/x-icon" href="jnidel.jpg">
     <title>TSFTA 😋</title>
     <style>
         /* Set display to none for image*/
@@ -27,7 +27,7 @@
                 text-align: center;
                 text-transform:uppercase;
                 margin-top: 20px;">
-        Tylak Shrem Food Telling Association
+        Jitan Jnidel Food Telling Association
     </h1>
     <h2 style="color: rgb(64, 128, 138); font-family: Inter; text-transform:uppercase;">Our Menu</h2>
     <!-- <img src="mess_aug.jpg" alt="" width="700" style="border-radius: 2%" /> -->
@@ -39,7 +39,7 @@
     </button>
     <button id="tylakmode" style=" font-family:Inter; background-color: rgb(55, 241, 248);border:2px solid rgb(255, 138, 12); float: right; margin-right: 20px; border-radius:45%; padding: 5px 10px 5px 10px;" type="button"
         onclick="tylak()" class="1">
-        Tylak Mode
+        Jnidel Mode
     </button>
     <br>
     <br>
@@ -382,20 +382,20 @@
     </div>
 
     <p style="font-family: Inter; font-style:italic; color: rgb(71, 71, 213)">
-        Mr. Tylak Shrem is a reknowned mathematician currently serving as
+        Mr. Jitan Jnidel is a reknowned mathematician currently serving as
         Hostel Warden of Madras Municipal Corporation College (MMCC)
     </p>
 
-    <img id="image" src="tylak.jpg" alt="tylak" width=300 style="border-radius:14px; background:#889bfc; padding:10px;"/>
+    <img id="image" src="jnidel.jpg" alt="tylak" width=300 style="border-radius:14px; background:#889bfc; padding:10px;"/>
     <br>
     <button type="button"
-        onclick="show();" id="btnID">Tylak</button>
+        onclick="show();" id="btnID">Show Jnidel</button>
     <br><br><br>
     
     <script>
         function tylak() {
             if (document.body.style.backgroundImage == "initial") {
-                document.body.style.backgroundImage = "url('tylak.jpg')";
+                document.body.style.backgroundImage = "url('jnidel.jpg')";
                 document.body.style.backgroundSize = document.getElementById('tylakmode').className + "px";
                 document.getElementById('tylakmode').className*=2;
                 document.body.style.backgroundRepeat = "repeat";
@@ -417,14 +417,14 @@
             
         }   
         function show() {
-            if(document.getElementById('btnID').textContent == "Tylak"){
+            if(document.getElementById('btnID').textContent == "Show Jnidel"){
                 document.getElementById('image').style.display = "block";
                 scrolltoimg()
-                document.getElementById('btnID').textContent = "Hide";
+                document.getElementById('btnID').textContent = "Hide Jnidel";
                 
             } else {
                 document.getElementById('image').style.display = "none";
-                document.getElementById('btnID').textContent = "Tylak";
+                document.getElementById('btnID').textContent = "Show Jnidel";
             }
             /* Access image by id and change
             the display property to block*/
